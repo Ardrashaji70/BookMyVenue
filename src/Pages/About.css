@@ -1,0 +1,298 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Outfit:wght@400;500;600;700&display=swap');
+
+* { box-sizing: border-box; margin: 0; padding: 0; }
+
+.about-wrapper {
+  width: 100%;
+  min-height: 100vh;
+
+  background-image: linear-gradient(
+      rgba(0, 0, 0, 0.5),
+      rgba(0, 0, 0, 0.5)
+    ),
+    url("../Assets/about-hero.jpg.jpg");
+
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+/* ── Hero ── */
+.about-hero {
+  text-align: center;
+  padding: 80px 20px 60px;
+
+}
+
+.about-badge {
+  display: inline-block;
+  border: 1px solid #bbf7d0;
+  color: #27dc6d;
+  font-size: 13px;
+  font-weight: 600;
+  padding: 6px 18px;
+  border-radius: 20px;
+  margin-bottom: 20px;
+  letter-spacing: 0.05em;
+}
+
+.about-title {
+  font-family: 'DM Serif Display', Georgia, serif;
+  font-size: 48px;
+  font-weight: 400;
+  color: #f0f2f5;
+  margin-bottom: 16px;
+  line-height: 1.2;
+}
+
+.about-highlight { color: #f71b43; }
+
+.about-subtitle {
+  font-size: 17px;
+  color: #f9fafb;
+  max-width: 600px;
+  margin: 0 auto;
+  line-height: 1.7;
+}
+
+/* ── Sections ── */
+.about-section {
+  padding: 64px 20px;
+}
+
+.about-section-gray {
+}
+
+.about-section-dark {
+  
+}
+
+.about-container {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.about-section-title {
+  font-family: 'DM Serif Display', Georgia, serif;
+  font-size: 34px;
+  font-weight: 400;
+  color: #df2020;
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.about-title-white {
+  color: #eb2727;
+}
+
+.about-section-text {
+  font-size: 16px;
+  color: #f6f8f9;
+  line-height: 1.8;
+  text-align: center;
+  max-width: 720px;
+  margin: 0 auto;
+}
+
+/* ── Problem cards ── */
+.about-cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+  gap: 20px;
+}
+
+.about-card {
+  border: 1px solid #e5e7eb;
+  border-radius: 16px;
+  padding: 28px 24px;
+  transition: box-shadow 0.2s;
+}
+
+.about-card:hover {
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08);
+}
+
+.about-card-icon {
+  font-size: 32px;
+  margin-bottom: 14px;
+}
+
+.about-card h3 {
+  font-size: 16px;
+  font-weight: 700;
+  color: #111827;
+  margin-bottom: 8px;
+}
+
+.about-card p {
+  font-size: 14px;
+  color: #edeff4;
+  line-height: 1.6;
+}
+
+/* ── Features ── */
+.about-features {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 24px;
+}
+
+.about-feature {
+  display: flex;
+  align-items: flex-start;
+  gap: 16px;
+  padding: 20px;
+  border: 1px solid #e5e7eb;
+  border-radius: 14px;
+  transition: border-color 0.2s;
+}
+
+.about-feature:hover {
+  border-color: #16a34a;
+}
+
+.about-feature-icon {
+  font-size: 28px;
+  flex-shrink: 0;
+}
+
+.about-feature h4 {
+  font-size: 15px;
+  font-weight: 700;
+  color: #111827;
+  margin-bottom: 6px;
+}
+
+.about-feature p {
+  font-size: 13px;
+  color: #f1f3f7;
+  line-height: 1.6;
+}
+
+/* ── Vision & Mission ── */
+.about-vm {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 24px;
+}
+
+.about-vm-card {
+  border-radius: 16px;
+  padding: 36px 32px;
+  color: #fff;
+  text-align: center;
+  transition-property: background 0.15s;
+}
+
+.about-vm-card-yellow {
+  color: #e8eaee;
+  transition: background 0.15s;
+}
+
+.about-vm-icon {
+  font-size: 40px;
+  margin-bottom: 16px;
+}
+
+.about-vm-card h3 {
+  font-size: 20px;
+  font-weight: 700;
+  margin-bottom: 12px;
+}
+
+.about-vm-card p {
+  font-size: 15px;
+  line-height: 1.7;
+  opacity: 0.92;
+}
+
+/* ── Venue chips ── */
+.about-venues {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  justify-content: center;
+}
+
+.about-venue-chip {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  border: 1px solid #e5e7eb;
+  border-radius: 20px;
+  padding: 10px 20px;
+  font-size: 14px;
+  font-weight: 500;
+  color: #ecf0f7;
+  transition: border-color 0.15s, background 0.15s;
+  cursor: pointer;
+}
+
+
+
+/* ── CTA ── */
+.about-cta {
+  text-align: center;
+  padding: 72px 20px;
+  color: #fff;
+  transition: background 0.15s;
+}
+
+.about-cta h2 {
+  font-family: 'DM Serif Display', Georgia, serif;
+  font-size: 36px;
+  font-weight: 400;
+  margin-bottom: 12px;
+}
+
+.about-cta p {
+  font-size: 16px;
+  color: #e8ecea;
+  margin-bottom: 32px;
+}
+
+.about-cta-btns {
+  display: flex;
+  gap: 12px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.about-cta-primary {
+  background: #f71b43;
+  color: #fff;
+  border: none;
+  border-radius: 10px;
+  font-size: 15px;
+  font-weight: 700;
+  padding: 14px 32px;
+  text-decoration: none;
+  transition: background 0.15s;
+}
+
+.about-cta-primary:hover { background: #d9002f; color: #fff; }
+
+.about-cta-outline {
+  background: transparent;
+  color: #fff;
+  border: 2px solid rgba(255,255,255,0.4);
+  border-radius: 10px;
+  font-size: 15px;
+  font-weight: 700;
+  padding: 14px 32px;
+  text-decoration: none;
+  transition: border-color 0.15s;
+}
+
+.about-cta-outline:hover {
+  border-color: #fff;
+  color: #fff;
+}
+
+/* ── Responsive ── */
+@media (max-width: 768px) {
+  .about-title { font-size: 32px; }
+  .about-vm { grid-template-columns: 1fr; }
+  .about-cta h2 { font-size: 26px; }
+}

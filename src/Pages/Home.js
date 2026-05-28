@@ -28,7 +28,7 @@ const HomePage = () => {
         {/* Overlay */}
         <div className="hero-overlay" />
 
-        {/* Navbar */}
+        {/* Navbar */} 
         <div className="hero-navbar">
           <Navbar />
         </div>
